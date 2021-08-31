@@ -8,7 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class SpringApplicationXml {
 	public static void main(String[] args) {
-		ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext("application-bean-a-scanner.xml");
 		Additioneur additioneur=context.getBean(Additioneur.class);
 		Facture facture=context.getBean(Facture.class);
 		System.out.println(facture);
