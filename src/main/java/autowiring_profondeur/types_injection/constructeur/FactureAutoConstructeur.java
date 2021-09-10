@@ -4,10 +4,11 @@ package autowiring_profondeur.types_injection.constructeur;
 
 import autowiring_profondeur.types_injection.beans.Additioneur;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
-//@Component
+@Component
 public class FactureAutoConstructeur {
 
     Date date;
@@ -26,8 +27,6 @@ public class FactureAutoConstructeur {
     }
 
     @Autowired
-
-
     public Additioneur getAdditioneur() {
         return additioneur;
     }

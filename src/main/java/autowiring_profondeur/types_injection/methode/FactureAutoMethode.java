@@ -4,10 +4,11 @@ package autowiring_profondeur.types_injection.methode;
 
 import autowiring_profondeur.types_injection.beans.Additioneur;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
-//@Component
+@Component
 public class FactureAutoMethode {
 
     Date date;

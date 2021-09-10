@@ -13,7 +13,7 @@ public class Client {
     Voiture voiture;
 
 
-    @Qualifier("citadine")
+    //@Qualifier("citadine")
     @Autowired()
     public void setVoiture(Voiture voiture) {
         this.voiture = voiture;
